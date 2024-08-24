@@ -90,6 +90,7 @@ const RestCountries: React.FC = () => {
             className="flex-1 md:py-4 py-2 md:px-10 px-4 rounded-full outline-none "
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="Enter the country name"
           />
           <button
             className="bg-[#ff7e00] md:px-8 px-5 py-2 rounded-full text-white text-base md:text-lg cursor-pointer hover:opacity-90"
@@ -111,6 +112,7 @@ const RestCountries: React.FC = () => {
         country && (
           <div className="lg:px-64 md:px-24 px-3 md:py-10 py-4">
             <img
+              loading="lazy"
               src={country.flag}
               alt="flag"
               className="w-full md:w-full md:h-[60dvh] mb-5"
