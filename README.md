@@ -34,3 +34,9 @@ This React application fetches and displays country information using the REST C
    ```bash
     npm run dev
    ```
+
+## Usage
+
+- Enter the name of a country into the search input field.
+- Click the "Search" button or press Enter.
+- View the country details including the flag, capital, continent, and more.
