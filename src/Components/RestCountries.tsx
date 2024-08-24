@@ -80,7 +80,7 @@ const RestCountries: React.FC = () => {
 
   return (
     <>
-      <div className="text-center md:py-28 md:px-44 py-12 px-5 bg-slate-200">
+      <div className=" md:py-28 md:px-44 text-center py-12 px-5 bg-slate-200 block fixed top-0 w-full md:static">
         <form
           onSubmit={handleSearch}
           className="flex justify-between items-center gap-5"
@@ -110,7 +110,7 @@ const RestCountries: React.FC = () => {
         </p>
       ) : (
         country && (
-          <div className="lg:px-64 md:px-24 px-3 md:py-10 py-4">
+          <div className="lg:px-64 md:px-24 px-3 md:py-10 py-4 md:mt-3 mt-72">
             <img
               loading="lazy"
               src={country.flag}
